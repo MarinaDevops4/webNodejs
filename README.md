@@ -23,7 +23,7 @@ Asegúrate de tener instalado lo siguiente antes de ejecutar la aplicación:
 </ul>
 
 1. Clona este repositorio o descarga el código fuente
-git clone [https://github.com/tuusuario/tu-repositorio.git](https://github.com/MarinaDevops4/webNodejs.git)
+git clone https://github.com/MarinaDevops4/webNodejs.git
 2. Ve al directorio del proyecto.
 cd tu-proyecto
 3. Instala las dependencias.
