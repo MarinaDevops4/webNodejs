@@ -34,11 +34,11 @@ npm install
 <li>Copia la tabla que hay en el archivo sql en la carpeta conexion</li>
 
 </ul>
-#Ejecucion
+<h2>Ejecución</h2>
 Para ejecutar la aplicación, simplemente utiliza el siguiente comando:
 npm start
 La aplicación se ejecutará en http://localhost:3000 de forma predeterminada. Puedes acceder a ella en tu navegador web.
-#Uso
+<h2>Uso</h2>
 La aplicación consta de tres páginas:
    <ul>
 <li>Página de inicio: Accede a la página principal en http://localhost:3000/.</li>
