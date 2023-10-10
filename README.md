@@ -47,3 +47,10 @@ La aplicación consta de tres páginas:
 
 </ul>
 Después de enviar el formulario de contacto, los mensajes se almacenan en la base de datos MySQL y se envía un correo de confirmación al usuario con Nodemailer.
+
+<h2>Mejoras</h2>
+   <ul>
+<li>Validaciones</li>
+<li>Test Unitarios</li>
+
+</ul>
