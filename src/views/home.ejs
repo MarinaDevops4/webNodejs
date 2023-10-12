@@ -1,0 +1,66 @@
+<!-- /**
+ * Estructura de la página principal de un sitio web.
+ * @module home-page
+ */ -->
+
+<!--  Incluye el encabezado de la página web, que generalmente contiene la barra de navegación y otros elementos compartidos. -->
+<%- include('./layouts/header') %>
+
+
+<title>Sensive | Home</title>
+
+<div class="banner">
+  
+    <img src="/img/banner.jpg" class="img-banner" alt="Example Image">
+   
+    <div class="letter-banner">
+   
+        <p class="txt1">Tours & Travels</p>
+      
+        <p class="txt2">Amazing Places on Earth</p>
+       
+        <p class="date">December 12, 2018</p>
+    </div>
+</div>
+
+
+<div class="grid">
+   
+    <div class="flex-item">
+      
+        <img src="/img/img1.jpg" alt="">
+       
+        <div class="boton">FASHION</div>
+        
+        <p>New York fashion week's continued the evolution</p>
+        
+        <p class="date">2 days ago</p>
+    </div>
+    
+  
+    <div class="flex-item middle">
+        
+        <img src="/img/img2.jpg" alt="">
+        
+        <div class="boton">FASHION</div>
+        
+        <p>New York fashion week's continued the evolution</p>
+       
+        <p class="date">2 days ago</p>
+    </div>
+    
+   
+    <div class="flex-item">
+       
+        <img src="/img/img3.jpg" alt="">
+      
+        <div class="boton">FASHION</div>
+       
+        <p>New York fashion week's continued the evolution</p>
+       
+        <p class="date">2 days ago</p>
+    </div>
+</div>
+
+
+<%- include('./layouts/footer') %>
