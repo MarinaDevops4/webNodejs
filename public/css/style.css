@@ -1,3 +1,8 @@
+/**
+ * Archivo de estilos CSS para la página web.
+ */
+
+/* Estilos globales */
 * {
     margin: 0 auto;
     padding: 0 auto;
@@ -5,35 +10,32 @@
     list-style: none;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
 }
 
 body {
     width: 100%;
 }
 
+/* Encabezado */
 h1 {
     text-align: center;
     margin: 5px;
 }
 
-
 nav {
     background-color: #ffffff;
     width: 70%;
     height: 80px;
-
 }
-
 
 .enlace {
     position: absolute;
     padding: 20px 0px;
 }
 
-
 .logo-web {
     font-size: 30px;
+    font-weight: 600;
     margin: 1%;
     color: #1b151c;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -49,16 +51,19 @@ nav ul {
 nav ul li {
     display: inline;
     line-height: 80px;
-    font-size: 22px;
+    font-size: 20px;
     margin: 0 12px;
-    color: #1b151c;
+    color: #000000;
     transition: text-decoration 3s all;
+}
 
+nav ul li a {
+    color: #000000;
 }
 
 nav ul li a:hover {
     cursor: pointer;
-    text-decoration: underline #cb94e17d;
+    text-decoration: underline #7070707d;
     color: #96809f;
 }
 
@@ -67,15 +72,16 @@ nav ul li a:hover {
 }
 
 .nav-link.active {
-    text-decoration: underline #cb94e17d;
+    text-decoration: underline #000000d0;
 }
 
+/* Contenedor principal */
 .container {
     width: 70%;
     min-height: 800px;
-  
 }
 
+/* Banner de letras */
 .letter-banner {
     width: 42%;
     border-radius: 20px;
@@ -92,33 +98,26 @@ nav ul li a:hover {
     color: #423545;
     margin: 0 5px;
     padding: 1%;
-
 }
 
 .letter-banner .txt1 {
     font-size: 28px;
-
-
 }
+
 .letter-banner .txt2 {
     font-size: 44px;
-
-
 }
 
 .letter-banner .date {
     font-size: 23px;
     font-style: italic;
-
-
 }
 
+/* Banner de imágenes */
 .banner {
     position: relative;
     width: 100%;
-
     margin: 0 auto;
-
 }
 
 .banner img {
@@ -128,22 +127,18 @@ nav ul li a:hover {
 }
 
 .img-banner {
-
     display: block;
     width: 100%;
     height: auto;
 }
 
-
-
+/* Cuadrícula de elementos */
 .grid {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     margin-top: 2%;
-
-
 }
 
 .flex-item {
@@ -158,33 +153,36 @@ nav ul li a:hover {
 }
 
 .flex-item p {
-    font-size: 20px;
+    width: 72%;
+    font-family: serif;
+    font-size: 18px;
     font-weight: 600;
     color: #423545;
-    margin: 0 5px;
+    margin-left: 0 5px;
     padding: 1%;
 }
 
-
 .flex-item .date {
-    font-size: 18px;
-    font-weight: 100;
+    color: #939393;
+    font-size: 16px;
+    font-weight: 300;
     font-style: italic;
 }
-
 
 .middle {
     margin: 0% 2%;
 }
 
+/* Botón */
 .boton {
     width: 45%;
-    border: 1px solid #423545;
-    border-radius: 5px;
-    background-color: #423545;
-    color: white;
-    padding: 1% 0%;
-    font-size: 18px;
+    height: 31px;
+    border: 1px solid #000000;
+    border-radius: 2px;
+    background-color: #000000;
+    color: #bd7f3d;
+    padding-top: 4px;
+    font-size: 14px;
     margin-bottom: 2%;
     margin-top: 5%;
     transition: background-color 0.4s;
@@ -193,10 +191,9 @@ nav ul li a:hover {
 .boton:hover {
     background-color: #5e5161;
     cursor: pointer;
-
 }
 
-/* ToS */
+/* Términos de servicio */
 .parrafo-ToS {
     text-align: center;
     margin: 2%;
@@ -210,16 +207,13 @@ nav ul li a:hover {
     margin-bottom: 2%;
 }
 
-/* CONTACTS */
-
+/* Contactos */
 .box-contact {
     width: 100%;
-    margin: 5% 0% 5% 0%;
-    
+    margin: 8% 0% 5% 0%;
 }
 
 .contact-items {
-
     width: 33%;
     display: inline-grid;
 }
@@ -227,12 +221,10 @@ nav ul li a:hover {
 .contact-items ul {
     margin-left: 0px;
     padding-left: 0px;
-
 }
 
 .contact-items ul li {
     margin-top: 20px;
-
 }
 
 .icons {
@@ -252,7 +244,7 @@ nav ul li a:hover {
     display: grid;
 }
 
-form{
+form {
     width: 100%;
 }
 
@@ -265,15 +257,16 @@ input {
 }
 
 ::placeholder {
-    color: #999; 
+    color: #999;
     font-size: 16px;
     padding-left: 3%;
 }
 
-input:focus, textarea:focus{
+input:focus,
+textarea:focus {
     border: 1px solid rgb(225, 225, 225);
-    background-color: #f5f5f5; 
-    color: #505050; 
+    background-color: #f5f5f5;
+    color: #505050;
     outline: none;
 }
 
@@ -283,24 +276,24 @@ textarea {
     min-height: 132px;
     border: 1px solid rgb(203, 203, 203);
 }
-.btn-contact{
+
+.btn-contact {
     width: 40%;
-    height: 44px;
+    height: 41px;
     border-radius: 2px;
     margin-left: 71%;
+    padding-bottom: 5px;
     font-size: 14px;
-    transition: background-color 1s ease-in-out, 
-    color 1s ease-in-out, border 1s ease-in-out;
+    transition: background-color 1s ease-in-out, color 1s ease-in-out, border 1s ease-in-out;
 }
 
-.btn-contact:hover{
-    color:#3b2e3e;
+.btn-contact:hover {
+    color: #3b2e3e;
     background-color: #bfa5c9;
     border: 1px solid #bfa5c9;
 }
 
-
-/* FOOTER */
+/* Pie de página */
 footer {
     background-color: #333;
     color: #fff;
@@ -310,10 +303,15 @@ footer {
     bottom: 0;
     width: 100%;
     margin-top: 1%;
-
 }
 
+.msg-confirm {
+    font-size: 22px;
+    text-align: center;
+    color: green;
+}
 
 footer p {
     margin: 0;
+    font-size: 14px;
 }
